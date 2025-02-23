@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+.lack {
+    color: #aa1818;
+}
+
+#wordContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.word {
+    border: black solid 1px;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
+
+.wordLine {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}

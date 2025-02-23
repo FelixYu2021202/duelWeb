@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    --p1Color: #fe0b0b;
+    --p2Color: #2a31fe;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+input {
+    color: inherit;
+}
+
+#playerContainer {
+    display: flex;
+}
+
+.p1Color {
+    color: var(--p1Color);
+}
+
+.p2Color {
+    color: var(--p2Color);
+}
+
+.nameInput {
+    width: 50%;
+}
+
+#fileContainer {
+    display: flex;
+}
+
+#guessContainer {
+    display: flex;
+}
+
+.roundBox {
+    width: 2em;
+    height: 2em;
+    border: black solid 1px;
+    border-radius: 0.5em;
+    display: box;
+}
+
+.full {
+    width: 80%;
+}
+
+.underline {
+    height: 80%;
+    margin: 10%;
+    border-bottom: black solid 1px;
+    display: inline-block;
+}
+
+#gameBoard {
+    border-collapse: collapse;
+}
+
+.wordGrid {
+    border: black solid 1px;
+    color: #7e7e7a;
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+}
+
+#guessedFlex {
+    display: inline-flex;
+}
+
+#wordContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30em;
+}
+
+.singleWord {
+    display: flex;
+    border: black solid 1px;
+    border-radius: 0.5em;
+    vertical-align: middle;
+}
+
+.wordId {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.underline2 {
+    width: 0.75em;
+    height: 1.2em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    margin-right: 0.2em;
+    border-bottom: black solid 1px;
+}

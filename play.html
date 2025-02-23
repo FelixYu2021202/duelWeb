@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Duel</title>
+    <link rel="icon" href="https://www.luogu.com.cn/favicon.ico" type="x-icon">
+    <link rel="stylesheet" href="./play.css">
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./play.js"></script>
+</head>
+
+<body>
+    <h1>双人猜词</h1>
+    <div id="playerContainer">
+        <div id="p1Container" class="p1Color">
+            <div>玩家 1</div>
+            <div>
+                <input id="p1Name" class="nameInput"> <input type="color" id="p1Color" value="#FE0B0B">
+            </div>
+        </div>
+        <div id="p2Container" class="p2Color">
+            <div>玩家 2</div>
+            <div>
+                <input type="color" id="p2Color" value="#2A31FE"> <input id="p2Name" class="nameInput">
+            </div>
+        </div>
+    </div>
+    <div id="fileContainer">
+        <div id="importContainer">
+            <button>
+                <label for="importFile">上传存档</label>
+            </button>
+            <input style="display: none" type="file" id="importFile" accept=".json">
+        </div>
+        <div id="exportContainer">
+            <button id="exportFile">下载存档</button>
+        </div>
+    </div>
+    <div></div>
+    <div id="gbContainer">
+        <table id="gameBoard"></table>
+    </div>
+    <div id="currentTurn">现在轮到的是：<span id="currentTurnName"></span>（玩家<span id="currentTurnId"></span>）</div>
+    <div id="guessedContainer"><span>已经猜测的字母：</span><span id="guessedFlex"></span>
+    </div>
+    <div id="wordContainer"></div>
+    <div id="guessContainer">
+        <div class="roundBox" id="guessLetterContainer">
+            <div class="underline full" id="guessLetter"></div>
+        </div>
+        <button id="guessLetterButton">猜测！</button>
+    </div>
+</body>
+
+</html>
