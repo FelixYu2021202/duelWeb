@@ -227,6 +227,7 @@ jQuery(function main($) {
             console.log(t, p, v);
             if (t == 1) {
                 this.g += v;
+                $(`<span class="guessedLetter">${v}</span>`).appendTo(this.gl);
                 for (let i = 0; i < this.n; i++) {
                     for (let j = 0; j < this.n; j++) {
                         this.wvs[i][j].update(this.g, 3 - this.f.get());
