@@ -281,7 +281,7 @@ jQuery(function main($) {
                 return 1;
             }
             if (s[2] > this.n * this.n / 2) {
-                return 1;
+                return 2;
             }
             for (let j = 0; j < this.n; j++) {
                 let cc = [0, 0, 0];
